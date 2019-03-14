@@ -1,0 +1,27 @@
+# This file read by snapd
+name: hello-programmerc
+description: This program only print to stdout "Hello World". For education.
+version: 1.0
+# License for the snap content, based on SPDX license expressions.
+#https://spdx.org/licenses/
+
+#error
+#license: GPL-2.0-or-later
+
+# Type of snap, defaults to "app".
+#type: app | core | gadget | kernel | base
+#default is app
+
+type: app
+# List of architectures the snap may run on. Defaults to [all].
+#architectures:
+#    - all | amd64 | i386 | armhf | ...
+
+#error
+#
+#architectures:
+#  - build-on: i386
+#    run-on: [amd64, i386]
+apps:
+    hello:
+        command: bin/hello
